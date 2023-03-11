@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>룩핀</title>
+		<link rel="shortcut icon" href="./images/00_icons/favicon_web.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://kit.fontawesome.com/88abf922ee.js" crossorigin="anonymous"></script>
+		<script src="./js/jquery-1.12.4.min.js"></script>
+		<script src="./js/jquery.easing.min.js"></script>
+		<script defer src="./js/function.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<div class="head-top">
+					<div class="head-left">
+						<h1 class="logo"><a href="#">LOOKPIN</a></h1>
+					</div>
+					<div class="head-right">
+						<a href="#">장바구니</a>
+						<p>|</p>
+						<a href="#">마이룩핀</a>
+						<p>|</p>
+						<a href="#">로그인</a>
+					</div>
+					<span class="black"></span>
+				</div>
+				<nav>
+					<ul class="gnb">
+						<li><a href="#">상품랭킹</a></li>
+						<li><a href="#">신상품</a></li>
+						<li><a href="#">코디</a></li>
+						<li><a href="#">스토어</a></li>
+						<li><a href="#">이벤트</a></li>
+					</ul>
+					<div class="search">
+						<button class="btn-product">상품</button>
+						<button class="btn-store">스토어</button>
+						<input type="text" placeholder="어떤 상품을 찾으시나요?" />
+						<button class="btn-search">검색</button>
+					</div>
+					<span class="grey"></span>
+				</nav>
+			</header>
+			<section>
+				<div id="lnb">
+					<div class="lnb">
+						<h2><a href="#">상의</a></h2>
+						<ul>
+							<li><a href="#">반팔티</a></li>
+							<li><a href="#">셔츠/남방</a></li>
+							<li><a href="#">긴팔티</a></li>
+							<li><a href="#">맨투맨</a></li>
+							<li><a href="#">후드티/아노락</a></li>
+							<li><a href="#">후드집업</a></li>
+							<li><a href="#">니트/스웨터</a></li>
+							<li><a href="#">민소매/나시</a></li>
+							<li><a href="#">트레이닝상의</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">아우터</a></h2>
+						<ul>
+							<li><a href="#">코트</a></li>
+							<li><a href="#">점퍼</a></li>
+							<li><a href="#">자켓</a></li>
+							<li><a href="#">무스탕</a></li>
+							<li><a href="#">가디건</a></li>
+							<li><a href="#">항공점퍼/블루종</a></li>
+							<li><a href="#">패딩/다운</a></li>
+							<li><a href="#">수트</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">하의</a></h2>
+						<ul>
+							<li><a href="#">청바지</a></li>
+							<li><a href="#">슬랙스</a></li>
+							<li><a href="#">면바지</a></li>
+							<li><a href="#">트레이닝하의</a></li>
+							<li><a href="#">반바지</a></li>
+							<li><a href="#">조커팬츠</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">신발</a></h2>
+						<ul>
+							<li><a href="#">슬립온</a></li>
+							<li><a href="#">스니커즈</a></li>
+							<li><a href="#">운동화</a></li>
+							<li><a href="#">워커</a></li>
+							<li><a href="#">부츠</a></li>
+							<li><a href="#">로퍼</a></li>
+							<li><a href="#">보트화</a></li>
+							<li><a href="#">구두</a></li>
+							<li><a href="#">슬리퍼</a></li>
+							<li><a href="#">샌들</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">가방</a></h2>
+						<ul>
+							<li><a href="#">백팩</a></li>
+							<li><a href="#">크로스백</a></li>
+							<li><a href="#">토트백</a></li>
+							<li><a href="#">서류가방</a></li>
+							<li><a href="#">에코백</a></li>
+							<li><a href="#">클러치백</a></li>
+							<li><a href="#">이스트백</a></li>
+							<li><a href="#">메신저백</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">액세서리</a></h2>
+						<ul>
+							<li><a href="#">시계</a></li>
+							<li><a href="#">지갑</a></li>
+							<li><a href="#">벨트</a></li>
+							<li><a href="#">장갑</a></li>
+							<li><a href="#">양말</a></li>
+							<li><a href="#">모자</a></li>
+							<li><a href="#">안경</a></li>
+							<li><a href="#">반지</a></li>
+							<li><a href="#">팔찌</a></li>
+							<li><a href="#">목걸이/귀걸이</a></li>
+							<li><a href="#">넥타이</a></li>
+							<li><a href="#">마스크</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">기타</a></h2>
+						<ul>
+							<li><a href="#">기타</a></li>
+							<li><a href="#">언더웨어</a></li>
+							<li><a href="#">이너웨어</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">뷰티</a></h2>
+						<ul>
+							<li><a href="#">스킨케어</a></li>
+							<li><a href="#">메이크업</a></li>
+							<li><a href="#">향수</a></li>
+							<li><a href="#">헤어케어</a></li>
+							<li><a href="#">바디케어</a></li>
+							<li><a href="#">쉐이빙</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">디지털</a></h2>
+						<ul>
+							<li><a href="#">모바일</a></li>
+							<li><a href="#">사운드</a></li>
+							<li><a href="#">케이스</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">라이프</a></h2>
+						<ul>
+							<li><a href="#">조명</a></li>
+							<li><a href="#">가전/가구</a></li>
+							<li><a href="#">인테리어소품</a></li>
+							<li><a href="#">기타라이프</a></li>
+						</ul>
+					</div>
+					<div class="lnb">
+						<h2><a href="#">빅사이즈</a></h2>
+						<ul>
+							<li><a href="#">상의</a></li>
+							<li><a href="#">하의</a></li>
+							<li><a href="#">아우터</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="article">
+					<article id="top-section">
+						<div class="slides">
+							<ul class="slides-container">
+								<li><a href="#">오늘만 이가격</a></li>
+								<li><a href="#">2월엔 2득데이</a></li>
+								<li><a href="#">핏과 편안함을 동시에 봄맞이 팬츠 기획전</a></li>
+							</ul>
+							<div class="slides-navigation">
+								<a href="#" class="navigation-prev"><i class="fa-solid fa-angle-left"></i></a>
+								<a href="#" class="navigation-next"><i class="fa-solid fa-angle-right"></i></a>
+							</div>
+						</div>
+						<div class="popular">
+							<h3>인기검색어</h3>
+							<ol>
+								<li>
+									<a href="#">
+										<h4>1.</h4>
+										<p>오버핏</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h4>2.</h4>
+										<p>나이키</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h4>3.</h4>
+										<p>와이드</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h4>4.</h4>
+										<p>세미와이드</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h4>5.</h4>
+										<p>청자켓</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h4>6.</h4>
+										<p>후드티</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h4>7.</h4>
+										<p>밴딩</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h4>8.</h4>
+										<p>아디다스</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h4>9.</h4>
+										<p>투웨이</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h4>10.</h4>
+										<p>반집업</p>
+									</a>
+								</li>
+							</ol>
+						</div>
+					</article>
+					<article id="ranking">
+						<h3>상품랭킹</h3>
+						<a href="#">더보기 &gt;</a>
+						<div class="products-box">
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">플레이마틴</a>
+								<a href="#" class="product">
+									<h5>
+										[당일발송][1+1] 롱 +5cm 트레이닝 롱 와이드팬츠 세미와이드 기모 오버핏 밴딩 팬츠
+									</h5>
+									<p class="price"><b>22,800원</b></p>
+									<p class="stars">
+										<span class="star">★4.7</span><span class="review">(999+명 평가)</span>
+									</p>
+								</a>
+							</div>
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">디스페로</a>
+								<a href="#" class="product">
+									<h5>[1+1할인] +5cm 기장선택 데일리 세미와이드 데님팬츠_(5color)</h5>
+									<p class="price"><b>28,900원</b></p>
+									<p class="stars">
+										<span class="star">★4.8</span><span class="review">(999+명 평가)</span>
+									</p>
+								</a>
+							</div>
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">엘리스</a>
+								<a href="#" class="product">
+									<h5>반스 올드스쿨 블랙 슬립온 스니커즈 VN000D3HY28</h5>
+									<p class="price"><b>49,000원</b></p>
+									<p class="stars">
+										<span class="star">★4.8</span><span class="review">(963명 평가)</span>
+									</p>
+								</a>
+							</div>
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">어둑</a>
+								<a href="#" class="product">
+									<h5>[1+1할인][당일출고] 기획 밴딩 세미와이드 슬랙스 (4color)</h5>
+									<p class="price"><b>18,800원</b><span class="exdeli">배송우수</span></p>
+									<p class="stars">
+										<span class="star">★4.8</span><span class="review">(684명 평가)</span>
+									</p>
+								</a>
+							</div>
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">맨타임</a>
+								<a href="#" class="product">
+									<h5>[당일출고] [1+1] 덤블워싱 365일 레이어드티</h5>
+									<p class="price"><b>16,700원</b></p>
+									<p class="stars">
+										<span class="star">★4.8</span><span class="review">(999+명 평가)</span>
+									</p>
+								</a>
+							</div>
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">웨어키트</a>
+								<a href="#" class="product">
+									<h5>[당일출고] S/S 투웨이 바시티 오버핏 니트 가디건</h5>
+									<p class="price"><b>52,700원</b></p>
+									<p class="stars">
+										<span class="star">★4.8</span><span class="review">(23명 평가)</span>
+									</p>
+								</a>
+							</div>
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">플레이마틴</a>
+								<a href="#" class="product">
+									<h5>인] 일주일 스판 골지 맨투맨 베이직 소프트 라운드 오버핏 니트_(7color)</h5>
+									<p class="price"><b>12,900원</b></p>
+									<p class="stars">
+										<span class="star">★4.8</span><span class="review">(133명 평가)</span>
+									</p>
+								</a>
+							</div>
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">플레이마틴</a>
+								<a href="#" class="product">
+									<h5>[1+1][기모추가] 4타입 구김없는 링클프리 YKK 지퍼 9부 10부 히든밴딩 슬랙스</h5>
+									<p class="price"><b>26,800원</b></p>
+									<p class="stars">
+										<span class="star">★4.7</span><span class="review">(999+명 평가)</span>
+									</p>
+								</a>
+							</div>
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">1989스탠다드</a>
+								<a href="#" class="product">
+									<h5>NUMBER1989 후드(STHSTD-0005)</h5>
+									<p class="price"><b>29,900원</b></p>
+									<p class="stars">
+										<span class="star">★4.8</span><span class="review">(257명 평가)</span>
+									</p>
+								</a>
+							</div>
+							<div class="products">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">학샵</a>
+								<a href="#" class="product">
+									<h5>(MD추천) 봄 로랑 야상자켓 3컬러 [당일발송]</h5>
+									<p class="price"><b>59,900원</b><span class="exdeli">배송우수</span></p>
+									<p class="stars">
+										<span class="star">★5.0</span><span class="review">(6명 평가)</span>
+									</p>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article id="popcodi">
+						<h3>인기코디</h3>
+						<a href="#">더보기 &gt;</a>
+						<div class="codi-top">
+							<ul>
+								<li class="on"><a href="#">전체</a></li>
+								<li><a href="#">데일리</a></li>
+								<li><a href="#">훈남</a></li>
+								<li><a href="#">캐쥬얼</a></li>
+								<li><a href="#">커플</a></li>
+								<li><a href="#">댄디</a></li>
+								<li><a href="#">트렌드</a></li>
+								<li><a href="#">시크</a></li>
+								<li><a href="#">스트릿</a></li>
+								<li><a href="#">빈티지</a></li>
+							</ul>
+						</div>
+						<div class="product-box">
+							<div class="product">
+								<a class="product-frame" href="#">
+									<span class="white"></span>
+									<img src="./images/03_popcodi/001.jpg" alt="#" /><span class="thumbs-up"
+										><i class="fa-solid fa-thumbs-up"></i></span
+									><span class="good">237</span></a
+								>
+								<h5><a href="#" class="product-name">준비해야죠! 신학기 후드 코디</a></h5>
+								<a href="#" class="tags">데일리룩</a>
+								<a href="#" class="tags">캠퍼스룩</a>
+								<a href="#" class="tags">데이트룩</a>
+								<a href="#" class="tags">캐주얼</a>
+								<a href="#" class="tags">스트릿</a>
+							</div>
+							<div class="product">
+								<a class="product-frame" href="#">
+									<span class="white"></span><img src="./images/03_popcodi/002.jpg" alt="#" /><span
+										class="thumbs-up"
+										><i class="fa-solid fa-thumbs-up"></i></span
+									><span class="good">156</span></a
+								>
+								<h5><a href="#" class="product-name">3만원대 한정특가 코디❤️</a></h5>
+								<a href="#" class="tags">데일리룩</a>
+								<a href="#" class="tags">캠퍼스룩</a>
+								<a href="#" class="tags">데이트룩</a>
+								<a href="#" class="tags">여행룩</a>
+								<a href="#" class="tags">캐주얼</a>
+							</div>
+							<div class="product">
+								<a class="product-frame" href="#">
+									<span class="white"></span><img src="./images/03_popcodi/003.jpg" alt="#" /><span
+										class="thumbs-up"
+										><i class="fa-solid fa-thumbs-up"></i></span
+									><span class="good">86</span></a
+								>
+								<h5><a href="#" class="product-name">✨봄까지 쭉 !! 필수템 ✨</a></h5>
+								<a href="#" class="tags">데일리룩</a>
+								<a href="#" class="tags">데이트룩</a>
+								<a href="#" class="tags">캐주얼</a>
+								<a href="#" class="tags">미니멀</a>
+								<a href="#" class="tags">모던&포멀</a>
+							</div>
+							<div class="product">
+								<a class="product-frame" href="#">
+									<span class="white"></span><img src="./images/03_popcodi/004.jpg" alt="#" /><span
+										class="thumbs-up"
+										><i class="fa-solid fa-thumbs-up"></i></span
+									><span class="good">263</span></a
+								>
+								<h5><a href="#" class="product-name">💙룩핀니트1등 바시티가디건💙</a></h5>
+								<a href="#" class="tags">데일리룩</a>
+								<a href="#" class="tags">캠퍼스룩</a>
+								<a href="#" class="tags">데이트룩</a>
+								<a href="#" class="tags">여행룩</a>
+								<a href="#" class="tags">캐주얼</a>
+							</div>
+							<div class="product">
+								<a class="product-frame" href="#">
+									<span class="white"></span><img src="./images/03_popcodi/005.jpg" alt="#" /><span
+										class="thumbs-up"
+										><i class="fa-solid fa-thumbs-up"></i></span
+									><span class="good">82</span></a
+								>
+								<h5><a href="#" class="product-name">💖가성비 트러커 자켓 코디룩</a></h5>
+								<a href="#" class="tags">데일리룩</a>
+								<a href="#" class="tags">캠퍼스룩</a>
+								<a href="#" class="tags">데이트룩</a>
+								<a href="#" class="tags">여행룩</a>
+								<a href="#" class="tags">캐주얼</a>
+							</div>
+							<div class="product">
+								<a class="product-frame" href="#">
+									<span class="white"></span><img src="./images/03_popcodi/006.jpg" alt="#" /><span
+										class="thumbs-up"
+										><i class="fa-solid fa-thumbs-up"></i></span
+									><span class="good">176</span></a
+								>
+								<h5><a href="#" class="product-name">포인트 있는 남친룩 바시티자켓</a></h5>
+								<a href="#" class="tags">데일리룩</a>
+								<a href="#" class="tags">캠퍼스룩</a>
+								<a href="#" class="tags">데이트룩</a>
+								<a href="#" class="tags">캐주얼</a>
+								<a href="#" class="tags">스트릿</a>
+							</div>
+						</div>
+					</article>
+					<article id="shoprank">
+						<h3>쇼핑몰 순위</h3>
+						<a href="#" class="more">더보기 &gt;</a>
+						<div class="shoprank">
+							<a href="#" class="shoprank-shop">
+								<div class="rank top">1위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/001.jpg" alt="디스페로"
+								/></spam>
+								<h5>디스페로</h5>
+							</a>
+							<a href="#" class="shoprank-shop">
+								<div class="rank top">2위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/002.jpg" alt="로댄티"
+								/></spam>
+								<h5>로댄티</h5>
+							</a>
+							<a href="#" class="shoprank-shop">
+								<div class="rank top">3위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/003.jpg" alt="맨타임"
+								/></spam>
+								<h5>맨타임</h5>
+							</a>
+							<a href="#" class="shoprank-shop">
+								<div class="rank">4위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/004.jpg" alt="어둑"
+								/></spam>
+								<h5>어둑</h5>
+							</a>
+							<a href="#" class="shoprank-shop">
+								<div class="rank">5위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/005.jpg" alt="플레이마틴"
+								/></spam>
+								<h5>플레이마틴</h5>
+							</a>
+							<a href="#" class="shoprank-shop">
+								<div class="rank">6위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/006.jpg" alt="나뽀"
+								/></spam>
+								<h5>나뽀</h5>
+							</a>
+							<a href="#" class="shoprank-shop">
+								<div class="rank">7위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/007.jpg" alt="바이슬림"
+								/></spam>
+								<h5>바이슬림</h5>
+							</a>
+							<a href="#" class="shoprank-shop">
+								<div class="rank">8위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/008.jpg" alt="새늘"
+								/></spam>
+								<h5>새늘</h5>
+							</a>
+							<a href="#" class="shoprank-shop">
+								<div class="rank">9위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/009.png" alt="이브클로젯"
+								/></spam>
+								<h5>이브클로젯</h5>
+							</a>
+							<a href="#" class="shoprank-shop">
+								<div class="rank">10위</div>
+								<spam class="shop-frame"
+									><img src="./images/04_shoprank/010.jpg" alt="탑보이"
+								/></spam>
+								<h5>탑보이</h5>
+							</a>
+						</div>
+					</article>
+					<article id="brandrank">
+						<h3>브랜드 순위</h3>
+						<a href="#" class="more">더보기 &gt;</a>
+						<div class="brandrank">
+							<a href="#" class="brandrank-brand">
+								<div class="brand top">1위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/001.jpg" alt="반스"
+								/></span>
+								<h5>반스</h5>
+							</a>
+							<a href="#" class="brandrank-brand">
+								<div class="brand top">2위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/002.jpg" alt="나이키"
+								/></span>
+								<h5>나이키</h5>
+							</a>
+							<a href="#" class="brandrank-brand">
+								<div class="brand top">3위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/003.jpg" alt="1989스탠다드"
+								/></span>
+								<h5>1989스탠다드</h5>
+							</a>
+							<a href="#" class="brandrank-brand">
+								<div class="brand">4위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/004.jpg" alt="앨빈클로"
+								/></span>
+								<h5>앨빈클로</h5>
+							</a>
+							<a href="#" class="brandrank-brand">
+								<div class="brand">5위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/005.jpg" alt="엑스컨테이너"
+								/></span>
+								<h5>엑스컨테이너</h5>
+							</a>
+							<a href="#" class="brandrank-brand">
+								<div class="brand">6위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/006.jpg" alt="에스엔알디"
+								/></span>
+								<h5>에스엔알디</h5>
+							</a>
+							<a href="#" class="brandrank-brand">
+								<div class="brand">7위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/007.jpg" alt="그랜디오시티"
+								/></span>
+								<h5>그랜디오시티</h5>
+							</a>
+							<a href="#" class="brandrank-brand">
+								<div class="brand">8위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/008.jpg" alt="키노이"
+								/></span>
+								<h5>키노이</h5>
+							</a>
+							<a href="#" class="brandrank-brand">
+								<div class="brand">9위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/009.jpg" alt="옥스타"
+								/></span>
+								<h5>옥스타</h5>
+							</a>
+							<a href="#" class="brandrank-brand">
+								<div class="brand">10위</div>
+								<span class="brand-frame"
+									><img src="./images/05_brandrank/010.jpg" alt="챔피온"
+								/></span>
+								<h5>챔피온</h5>
+							</a>
+						</div>
+					</article>
+					<article id="new">
+						<h3>신상 업데이트</h3>
+						<a href="#">더보기 &gt;</a>
+						<div class="new-products">
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">르넨</a>
+								<a href="#" class="product-name"><h5>113 가죽로퍼 (2color)</h5></a>
+								<a href="#" class="price">51,000원 </a>
+							</div>
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">파이샵</a>
+								<a href="#" class="product-name"><h5>파이샵 브로디 하찌 라운드 니트 9컬러</h5></a>
+								<a href="#" class="price">44,000원</a>
+							</div>
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">자비노</a>
+								<a href="#" class="product-name"
+									><h5>[SET] 시스템 스트링 크롭 야상 + 강력 무지 반팔티</h5></a
+								>
+								<a href="#" class="price">52,900원</a>
+							</div>
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">파이샵</a>
+								<a href="#" class="product-name"><h5>파이샵 브로디 하찌 라운드 니트 9col</h5></a>
+								<a href="#" class="price">44,000원</a>
+							</div>
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">빌리버스</a>
+								<a href="#" class="product-name"
+									><h5>빌리버스 남성 가디건 BDT344 간절기 니트 아우터</h5></a
+								>
+								<a href="#" class="price">29,800원</a>
+							</div>
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">르넨</a>
+								<a href="#" class="product-name"><h5>8540 수제양가죽 로퍼 (2color)</h5></a>
+								<a href="#" class="price">114,000원</a>
+							</div>
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">빌리버스</a>
+								<a href="#" class="product-name"
+									><h5>빌리버스 남자 가디건 BDT344 브이넥 니트 아우터</h5></a
+								>
+								<a href="#" class="price">29,800원 </a>
+							</div>
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">빌리버스</a>
+								<a href="#" class="product-name"
+									><h5>빌리버스 남성 조끼 BTW151 니트 브이넥 베스트</h5></a
+								>
+								<a href="#" class="price">34,800원</a>
+							</div>
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">빌리버스</a>
+								<a href="#" class="product-name"
+									><h5>빌리버스 남자 조끼 BDT349 니트 베스트 레이어드룩</h5></a
+								>
+								<a href="#" class="price">19,800원</a>
+							</div>
+							<div class="product">
+								<span class="pinicon"><a href="#">핀</a></span>
+								<span class="product-img-frame"><a href="#" class="product-img"></a></span>
+								<a href="#" class="shop">빌리버스</a>
+								<a href="#" class="product-name"
+									><h5>빌리버스 남자 조끼 BDT348 니트 베스트 레이어드룩</h5></a
+								>
+								<a href="#" class="price">19,800원</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<footer>
+				<div class="policy">
+					<a href="#">이용약관</a>
+					<p>|</p>
+					<a href="#"><b>개인정보처리방침</b></a>
+					<p>|</p>
+					<a href="#">입점안내</a>
+					<p>|</p>
+					<a href="#">개인정보 제공 내용</a>
+					<p>|</p>
+					<a href="#">이벤트 및 프로모션 문자[SMS] 수신 및 활용 방침</a>
+				</div>
+				<div class="address">
+					<h5>(주)레벨13</h5>
+					<div class="address-list">
+						<p>
+							사업자 등록 번호: 161-87-00607 <a href="#">[사업자 정보확인]</a> | 통신판매업: 제
+							2020-서울강남-01989호 | 주소: 서울특별시 강남구 테헤란로34길 6, 3층 1,2호(역삼동,
+							태광타워) | 전화번호: 070-5165-7198
+						</p>
+						<p>대표이사: 김종현, 권순영 | 개인정보담당자: 오경식(privacy@lookpin.co.kr)</p>
+						<p>
+							(주)레벨13은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 (주)레벨13은
+							상품거래정보 및 거래에 대한 책임을 지지 않습니다.
+						</p>
+					</div>
+				</div>
+				<div class="service">
+					<h5>고객센터</h5>
+					<div class="service-list">
+						<a href="#">카카오톡</a>
+						<p>|</p>
+						<a href="#">공지사항</a>
+						<p>|</p>
+						<a href="#">자주묻는질문</a>
+					</div>
+				</div>
+			</footer>
+			<style>
+				@media screen and (max-width: 768px) {
+					#wrap {
+						display: none;
+					}
+
+					body:after {
+						display: block;
+						font-size: 24px;
+						line-height: 100vh;
+						text-align: center;
+						content: '이 포트폴리오는 모바일을 지원하지 않습니다.';
+					}
+				}
+			</style>
+		</div>
+	</body>
+</html>
